@@ -6,6 +6,8 @@ function great(){
 
 great();
 
+window.webkit.messageHandlers.great.postMessage("Send message to Swift")
+
 
 function setupWKWebViewJavascriptBridge(callback) {
     if (window.WKWebViewJavascriptBridge) { return callback(WKWebViewJavascriptBridge); }
