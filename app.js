@@ -2,6 +2,8 @@ console.log("test")
 
 function great(){
     console.log("great!!");
+    window.webkit.messageHandlers.great.postMessage("Send message to Swift")
+    console.log("great!! after");
 }
 
 great();
