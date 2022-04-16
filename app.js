@@ -1,5 +1,11 @@
 console.log("test")
 
+function great(){
+    console.log("great!!");
+}
+
+great();
+
 
 function setupWKWebViewJavascriptBridge(callback) {
     if (window.WKWebViewJavascriptBridge) { return callback(WKWebViewJavascriptBridge); }
@@ -21,3 +27,4 @@ setupWKWebViewJavascriptBridge(function(bridge) {
 		console.log('JS got response', response)
 	})
 })
+
