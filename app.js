@@ -1,5 +1,9 @@
 console.log("test")
 
+function otherWay(){
+    console.log("otherWay!!");
+}
+
 function great(){
     console.log("great!!");
     window.webkit.messageHandlers.great.postMessage("Send message to Swift")
